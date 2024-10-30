@@ -1,5 +1,11 @@
-
-
+# Função para exibir o histórico
+def exibir_historico(historico):
+    if not historico:
+        print("Histórico vazio.")
+    else:
+        print("Histórico:")
+        for i, entrada in enumerate(historico, 1):
+            print(f"{i}. {entrada}")
 # Função principal da calculadora
 def calculadora():
     historico = []  # Lista para guardar o histórico das operações
