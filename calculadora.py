@@ -12,3 +12,11 @@ def calculadora():
         print("6. Sair")
 
         escolha = input("Escolha uma operação (1-6): ")
+                if escolha == "6":
+            print("A sair da calculadora.")
+            break
+        elif escolha == "5":
+            exibir_historico(historico)
+        elif escolha in ["1", "2", "3", "4"]:
+            num1 = float(input("Digite o primeiro número: "))
+            num2 = float(input("Digite o segundo número: "))
