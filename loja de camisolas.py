@@ -48,3 +48,22 @@ def print_loja():
         print(f"Quantidade em estoque: {detalhes['quantidade']}")
         print(f"Tamanhos disponíveis: {', '.join(detalhes['tamanhos'])}")
         print("-" * 40)  # Linha separadora
+            print()
+            print()
+            print()
+ 
+print_loja()
+
+
+#Update camisolas de futebol na loja
+def update_quantidade_camisolas(camisola, nova_quantidade):
+    camisola_update = camisolas_futebol[camisola]
+    quantidade = camisola_update['quantidade']
+    camisola_update['quantidade'] = nova_quantidade
+    camisolas_futebol[camisola]=camisola_update
+
+update_quantidade_camisolas("Camisola Manchester United 20/21", 1)
+update_quantidade_camisolas("Camisola Sporting 23/24", 15)
+update_quantidade_camisolas("Camisola Real Madrid 23/24", 0) 
+
+print_loja()
